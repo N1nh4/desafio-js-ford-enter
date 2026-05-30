@@ -1,54 +1,102 @@
 .fordform {
-    display: block;
-    width: 300px;
-    border: 1px solid #cccccc;
-    border-radius: 10px;
-    height: 26px;
-    margin: 8px;
-    font-size: 13px;
-    padding: 5px;
+  display: block;
+  width: 300px;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  height: 26px;
+  margin: 8px;
+  font-size: 13px;
+  padding: 5px;
 }
 
 select.fordform {
-    width: 310px;
-    height: 36px;
-    color: #807d7d;
+  width: 310px;
+  height: 36px;
+  color: #807d7d;
 }
 
 input:focus-visible {
-    outline: none;
+  outline: none;
 }
 
 select:focus-visible {
-    outline: none;
+  outline: none;
 }
 
 main div {
-    display: inline-block;
-    vertical-align: top;
-    text-align: left;
-    padding-top: 30px;
-    padding-bottom: 30px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .forms {
-    display: block;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#fordform {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: min-content;
+}
+
+#car {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  height: stretch;
+}
+
+#titulo-sobre {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+  padding: 0px;
+}
+
+.msg {
+  padding: 0px;
+  margin: 8px;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  text-align: left;
+  gap: 10px;
+}
+
+#botao-enviar {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  width: 100%;
+  padding: 0px;
 }
 
 h2 {
-    text-align: left;
-    font-weight: 800;
+  text-align: left;
+  font-weight: 800;
 }
 
-
 button {
-    width: 200px;
-    height: 40px;
-    margin-right: 8px;
-    float: right;
+  width: 200px;
+  height: 40px;
+  margin-right: 8px;
+  float: right;
 }
 
 .titulo {
-    margin-left: 8px;
+  margin-left: 8px;
 }

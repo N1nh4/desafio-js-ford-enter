@@ -31,12 +31,15 @@
     </header>
     <main>
       <div class="forms">
-        <div>
+        <div id="car">
           <img src="img/xls 2.2 diesel.jpg" />
         </div>
-        <div>
-          <h2 class="titulo">Sobre Você</h2>
+        <div id="formulario">
+          <div id="titulo-sobre">
+            <h2 class="titulo">Sobre Você</h2>
+          </div>
           <form
+            id="fordform"
             onsubmit="
               event.preventDefault();
               Post(this);
@@ -92,7 +95,28 @@
               class="fordform"
               required
             />
-            <button type="submit">Enviar</button>
+            <div class="msg">
+              <span>
+                Os dados serão mantidos em nossa base de dados, só enquanto for
+                desejado por você. A qualquer momento, será possível editar ou
+                remover tais dados.
+                <a
+                  href="https://www.ford.com.br/politica-de-privacidade/
+              "
+                  target="_blank"
+                  >Termos e Condições</a
+                >
+              </span>
+              <span>
+                <input type="checkbox" name="termos" required />
+                Sim. Li e concordo com os Termos e Condições
+              </span>
+              <span>
+                <input type="checkbox" name="termos" />
+                Sim. Também quero receber descontos e novidades.
+              </span>
+            </div>
+            <div id="botao-enviar"><button type="submit">Enviar</button></div>
           </form>
         </div>
       </div>
